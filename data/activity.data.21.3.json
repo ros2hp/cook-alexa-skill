@@ -1,0 +1,550 @@
+{
+       "Ingredient" : [ 
+            {
+            "PutRequest": { 
+               "Item": {
+                  "PKey" : { "S": "C-21-3" },
+                  "SortK" : { "S": "RisoPan" },
+                  "label" : { "S" : "Risotto Pan" },
+                  "type" : { "S": "Pan" },
+                  "measure" : { "M" : { 
+                                      "dim" : { "N" : "30" } , 
+                                      "height"   : { "N" : "2.5"  } ,
+                                      "unit" : { "S" : "cm" }  
+                                      }
+                              },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  }
+                   }
+               }
+            }
+        ],
+        "Recipe" : [ 
+        {
+        "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "R-21" },
+                "SortK" : { "N": "3"},
+                "RName" : { "S": "Risotto Nero with Swiss Chard"},
+                "Index" : { "SS" : ["cuttlefish","swiss-chard risotto"] },
+                "Srv" : { "S": "8" } 
+            }
+        }
+        },
+        {
+          "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "20"},
+                "label" : { "S": "olive oil"},
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "olive oil"},
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "100" } ,
+                                      "unit" : { "S" : "ml" }
+                                      }
+                },
+                "task" : { "L" : [
+                                { "M" :  {
+                                  "txt" : { "S" : "warm {measure} of {ingrd} in a large pan" },
+                                  "say" : { "S" : "warm {measure} of {ingrd} in a large pan" },
+                                  "time" : { "N" : "1" },
+                                  "unit" : { "S" : "min" }, 
+                                  "useC" : { "SS" : ["MC-S"] },
+                                  "addToC" : { "SS" : [ "RisoPan" ] }
+                                    }
+                                }
+                                ]
+                }
+        }
+        }
+        },
+        {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "30"},
+                "label" : { "S": "Onion"},
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "red onion" },
+                "iQual" : { "S" : "peeled and finely chopped" },
+                "measure" : { "M" : { 
+                                      "qty" : {"S": "1" },
+                                      "size" : { "S" : "medium" } 
+                                      } 
+                },
+                "prep" : { "L" : [
+                                { "M" : { 
+                                  "txt" : { "S" : "Peel and finely chop {measure} {ingrd} and set aside" },
+                                  "say" : { "S" : "Peel and finely chop {measure} {ingrd} and set aside"  },
+                                  "time" : { "N" : "3" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useD" : { "M" : {
+                                                "type" : { "S": "knife" }
+                                        }
+                                    },
+                                  "useC" : { "SS" : [ "SAP-S" ] }
+                                }
+                                }
+                                ]
+                },
+                "task" : { "L" : [
+                                { "M" : { 
+                                  "txt" : { "S" : "Add the chopped {ingrd} to the pan and fry until translucent" },
+                                  "say" : { "S" : "Add the chopped {ingrd} to the pan and fry until translucent" },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "SourceC" : { "SS" : [ "SAP-S" ] },
+                                  "addToC" : { "SS" : [ "RisoPan" ] }
+                                }
+                                }
+                                ]
+                }
+            }
+            }
+            } ,
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "40"},
+                "label" : { "S": "Garlic"},
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "garlic" },
+                "iQual" : { "S" : "cloves, peeled and finely chopped" },
+                "measure" : { "M" : { 
+                                      "qty" : {"S": "2" },
+                                      "size" : { "S" : "medium" } 
+                                      } 
+                },
+                "task" : { "L" : [
+                                { "M" : { 
+                                  "txt" : { "S" : "Peel and finely chop {measure} {ingrd} cloves and add to pan" },
+                                  "say" : { "S" : "Peel and finely chop {measure} {ingrd} cloves and add to pan" },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useD" : { "M" : {
+                                                "type" : { "S": "knife" },
+                                                "purpose" : { "S":"chop"}
+                                        }
+                                    },
+                                  "addToC" : { "SS" : [ "RisoPan" ] }
+                                }
+                                }
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "50"},
+                "label" : { "S": "Cuttlefish"},
+                "ingrd" : { "S" : "cuttlefish" },
+                "iQual" : { "S" : "cleaned by the fishmonger (ask for the ink sacs)" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "size" : { "S" : "large" } ,
+                                      "qty" : { "S" : "1" }
+                                      }
+                },
+                "prep" :  { "L" : [
+                                { "M" :  {
+                                 "txt" : { "S" : "Finely chop {measure} {ingrd}. Keep the ink sacs intact if using and set both aside." },
+                                  "say" : { "S" : "Finely chop {measure} {ingrd}. Keep the ink sacs intact if using and set both aside" },
+                                  "time" : { "N" : "3" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useC"  : { "SS" : [ "SAP-L"  ] }
+                                  }
+                                }
+                                ]
+                },
+                "task" :  { "L" : [
+                                { "M" :  {
+                                  "txt" : { "S" : "Add the {ingrd} to the pan. Do not add the ink just yet." },
+                                  "say" : { "S" : "Add the {ingrd} to the pan. Do not add the ink just yet." },
+                                  "time" : { "N" : "0" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "SourceC"  : { "SS" : [ "SAP-L" ] },
+                                  "addToC" : { "SS" : [ "RisoPan" ] }
+                                  }
+                                }
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "55"},
+                "label" : { "S": "Chilli"},
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "red chilli" },
+                "quali" : { "S" : "dry" },
+                "iQual" : { "S" : "crumbled" },
+                "measure" : { "M" : { 
+                                      "qty" : {"S": "1" }
+                                      } 
+                },
+                "task" :  { "L" : [
+                                { "M" : { 
+                                  "txt" : { "S" : "Add {measure} {iQual} {ingrd} to the pan" },
+                                  "say" : { "S" : "Add {measure} {iQual} {ingrd} to the pan" },
+                                  "time" : { "N" : "0" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : [ "RisoPan" ] }
+                                }
+                                }
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "60"},
+                "label" : { "S": "seasoning"},
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "seasoning" },
+                "iQual" : { "S" : ", sea salt and black pepper" },
+                "task" :  { "L" : [
+                                { "M" : { 
+                                  "txt" : { "S" : "Add {ingrd}{iQual} to {addtoc}. Stir to combine." },
+                                  "say" : { "S" : "Add {ingrd}{iQual} to {addtoc}. Stir to combine." },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "addToC" : { "SS" : [ "RisoPan" ] }
+                                }
+                                }
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "65"},
+                "label" : { "S": "Rice"},
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "rice" },
+                "quali" : { "S" : "risotto" },
+                "measure" : { "M" : { 
+                                      "qty" : {"S": "300" },
+                                      "unit" : { "S" : "g" } 
+                                      } 
+                },
+                "prep" :  { "L" : [
+                                { "M" : { 
+                                  "txt" : { "S" : "Measure out {measure} of {quali} {ingrd} and set aside" },
+                                  "say" : { "S" : "Measure out {measure} of {quali} {ingrd} and set aside" },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useC" : { "SS" : [ "SAP-M" ] }
+                                }
+                                }
+                                ]
+                },
+                "task" :  { "L" : [
+                            { "M" : { 
+                                  "txt" : { "S" : "Now add the {ingrd} to the pan and stir to combine. Fry for {time} to {tplus} or until opaque" },
+                                  "say" : { "S" : "Now add the {ingrd} to the pan and stir to combine. Fry for {time} to {tplus} or until opaque" },
+                                  "time" : { "N" : "2" },
+                                  "tplus" : { "N" : "1" },
+                                  "unit" : { "S" : "min" },
+                                  "sourceC" : { "SS" : [ "SAP-M" ] },
+                                  "addToC" : { "SS" : [ "RisoPan" ] }
+                                }
+                            }
+                            ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "70"},
+                "label" : { "S": "wine"},
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "white wine" },
+                "measure" : { "M" : { 
+                                      "qty" : {"S": "120" },
+                                      "unit" : { "S" : "ml" } 
+                                      } 
+                },
+                "task" :  { "L" : [
+                                { "M" : { 
+                                  "txt" : { "S" : "Add {measure} of {ingrd} to pan. Give contents a good stir." },
+                                  "say" : { "S" : "Add {measure} of {ingrd} to pan. Give contents a good stir." },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "sourceC": { "SS" : [ "MC-S" ] },
+                                  "addToC" : { "SS" : [ "RisoPan" ] }
+                                }
+                                }
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "75"},
+                "label" : { "S": "Tomatoes"},
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "tomatoes" },
+                "quali" : { "S" : "peeled plum" },
+                "iQual" : { "S" : "from a jar, drained of their juices" },
+                "measure" : { "M" : { 
+                                      "qty" : { "S": "4" }
+                                      } 
+                },
+                "prep" :  { "L" : [
+                                { "M" : { 
+                                  "txt" : { "S" : "Drain {ingrd}. Set aside." },
+                                  "say" : { "S" :  "Drain {ingrd}. Set aside." },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useD" : { "M" : {
+                                                "type" : { "S": "colander" },
+                                                "purpose" : { "S":"to drain tomatoes"},
+                                                "alternate" : { "S" : "cupped hand" }
+                                        }
+                                    }
+                                }
+                                }
+                                ]
+                },
+                "task" :  { "L" : [
+                                { "M" : { 
+                                  "txt" : { "S" : "Add  {ingrd}s to pan. Simmer until most of the liquid has been absorbed by the rice, stirring to prevent sticking" },
+                                  "say" : { "S" : "Add  {ingrd}s to pan. Simmer until most of the liquid has been absorbed by the rice, stirring to prevent sticking" },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useD" : { "M" : {
+                                                "type" : { "S": "colander" },
+                                                "purpose" : { "S":"drain tomatoes"},
+                                                "alternate" : { "S" : "cupped hand" }
+                                        }
+                                    },
+                                  "addToC" : { "SS" : [ "RisoPan" ] }
+                                }
+                                }
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "80"},
+                "label" : { "S": "Ink"},
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "squid ink" },
+                "measure" : { "M" : { 
+                                      "qty" : { "S": "2" },
+                                      "unit" : {"S" : "sachet" }
+                                      } 
+                },
+                "altIngrd" : { "S" : "use the saved ink sac from the cuttle fish" },
+                "task" :  { "L" : [
+                                { "M" : { 
+                                  "txt" : { "S" : "Now add {measure} of {ingrd} or {altIngrd}, to the pan and stir in. When each grain of rice has become black proceed to next task" },
+                                  "say" : { "S" : "Now add {measure} of {ingrd} or {altIngrd}, to the pan and stir in. When each grain of rice has become black proceed to next task" },
+                                  "time" : { "N" : "2" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : [ "RisoPan" ] }
+                                }
+                                }
+                                ]
+                 }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "90"},
+                "label" : { "S": "Fish Stock"},
+                "ingrd" : { "S" : "fish stock" },
+                "iQual" : { "S" : ", (review fish stock recipe)" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "1" },
+                                      "unit" : { "S" : "l" } 
+                                      }
+                },
+                "prep" : {  "L" : [
+                                { "M" :  {
+                                 "txt" : { "S" : "In a {useC} sausepan, warm up {measure} of {ingrd} but do not bring to boil. Keep it warm until used" },
+                                  "say" : { "S" : "In a {useC} sausepan, warm up {measure} of {ingrd} but do not bring to boil. Keep it warm until used." },
+                                  "time" : { "N" : "5" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useC"  : { "SS" : [ "SAS-L"  ] },
+                                  "parallel" : { "BOOL" : true }
+                                  }
+                                }
+                                  ]
+                },
+                "task" :  { "L" : [
+                                { "M" :  {
+                                 "txt" : { "S" : "Add the {ingrd} a ladleful at a time only adding more when the previous addition has been absorbed. Continue until the {ingrd} is cooked al dente" },
+                                  "say" : { "S" : "Add the {ingrd} a ladleful at a time only adding more when the previous addition has been absorbed. Continue until the {ingrd} is cooked al dente" },
+                                  "time" : { "N" : "6" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "sourceC" : { "SS" : [ "SAS-L"  ] },
+                                  "addToC"  : { "SS" : [ "RisoPan"  ] }
+                                  }
+                                }
+                                ]
+                 }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "100"},
+                "label" : { "S": "Parsley"},
+                "ingrd" : { "S" : "parsley" },
+                "quali" : { "S" : "flat-leaf" },
+                "iQual" : { "S" : "chopped coarsely" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "3" },
+                                      "unit" : { "S" : "tbsp" } 
+                                      }
+                },
+                "prep" :  { "L" : [
+                                { "M" :  {
+                                 "txt" : { "S" : "Coarsely chop {measure} of {ingrd} and set aside" },
+                                  "say" : { "S" : "Coarsely chop {measure} of {ingrd} and set aside"},
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useC"  : { "SS" : [ "SAP-S"  ] } 
+                                  }
+                                }
+                                ]
+                },
+                "task" :  { "L" : [
+                                { "M" :  {
+                                 "txt" : { "S" : "Remove from heat and add chopped {ingrd} and stir" },
+                                  "say" : { "S" :  "Remove from heat and add chopped {ingrd} and stir" },
+                                  "time" : { "N" : "0" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "sourceC" : { "SS" : ["SAP-S"] },
+                                  "addToC"  : { "SS" : [ "RisoPan"  ] }
+                                  }
+                                }
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "110"},
+                "label" : { "S": "Chard"},
+                "ingrd" : { "S" : "Swiss chard" },
+                "quali" : { "S" : "cooked" },
+                "iQual" : { "S" : "chopped" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "200" },
+                                      "unit" : { "S" : "g" } 
+                                      }
+                },
+                "prep" :  { "L" : [
+                                { "M" :  {
+                                  "txt" : { "S" : "Cook {measure} of {ingrd} for {time} {unit}, drain and then chop coarsely. Set aside" },
+                                  "say" : { "S" : "Cook {measure} of {ingrd} for {time} {unit}, drain and then chop coarsely. Set aside" },
+                                  "time" : { "N" : "2" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useC"  : { "SS" : [ "SAP-M"  ] } 
+                                  }
+                                }
+                                ]
+                },
+                "task" :  { "L" : [
+                                { "M" :  {
+                                 "txt" : { "S" : "Add the {ingrd}, stir in and taste for sufficient seasoning" },
+                                  "say" : { "S" : "Add the {ingrd}, stir in and taste for sufficient seasoning." },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "sourceC"  : { "SS" : [ "SAP-M"  ] } ,
+                                  "addToC"  : { "SS" : [ "RisoPan"  ] }
+                                  }
+                                }
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-3" },
+                "SortK" : { "N": "120"},
+                "label" : { "S": "Butter"},
+                "ingrd" : { "S" : "unsalted butter" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "75" },
+                                      "unit" : { "S" : "g" } 
+                                      }
+                },
+                "task" :  { "L" : [
+                                { "M" :  {
+                                 "txt" : { "S" : "Chop {ameasure} of {ingrd} into {measure} pieces and add to the risotto. Server immediately" },
+                                  "say" : { "S" :"Chop {ameasure} of {ingrd} into {measure} pieces and add to the risotto. Server immediately, yes now, quick" },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC"  : { "SS" : [ "RisoPan"  ] },
+                                  "measure" : { "M" : { 
+                                      "qty" : { "S" : "2" },
+                                      "unit" : { "S" : "cm" } 
+                                      }
+                                      }
+                                  }
+                                }
+                                ]
+                }
+            }
+            }
+            }
+    ]
+}    

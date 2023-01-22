@@ -1,0 +1,644 @@
+{
+       "Ingredient" : [ 
+        {
+        "PutRequest": { 
+               "Item": { 
+                  "PKey" : { "S": "C-20-7" },
+                  "SortK" : { "S": "whitebowl" },
+                  "type" : { "S": "bowl" },
+                  "label" : { "S": "bowl" },
+                  "measure" : { "M" : {  "size" : { "S" : "medium" }
+                  } },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  }
+                  }
+            }
+         },
+        {
+        "PutRequest": { 
+               "Item": { 
+                  "PKey" : { "S": "C-20-7" },
+                  "SortK" : { "S": "eggbowl" },
+                  "type" : { "S": "bowl" },
+                  "label" : { "S": "bowl" },
+                  "measure" : { "M" : {  "size" : { "S" : "small" }
+                  } },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  }
+                  }
+            }
+         },
+         {
+         "PutRequest": { 
+               "Item": { 
+                  "PKey" : { "S": "C-20-7" },
+                  "SortK" : { "S": "hbowl" },
+                  "type" : { "S": "bowl" },
+                  "label" : { "S": "bowl" },
+                  "measure" : { "M" : {  "size" : { "S" : "medium" }
+                  } },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  }
+                  }
+            }
+         },
+         {
+          "PutRequest": { 
+               "Item": { 
+                  "PKey" : { "S": "C-20-7" },
+                  "SortK" : { "S": "chocpan" },
+                  "type" : { "S": "sausepan" },
+                  "label" : { "S": "sausepan" },
+                  "measure" : { "M" : {  "size" : { "S" : "small" }
+                  } },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  }
+                  }
+            }
+         },
+         {
+          "PutRequest": { 
+               "Item": { 
+                  "PKey" : { "S": "C-20-7" },
+                  "SortK" : { "S": "brittlepan" },
+                  "type" : { "S": "sausepan" },
+                  "label" : { "S": "sausepan" },
+                  "measure" : { "M" : {  "size" : { "S" : "small" }
+                  } },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  }
+                  }
+            }
+         },
+         {
+          "PutRequest": { 
+               "Item": { 
+                  "PKey" : { "S": "C-20-7" },
+                  "SortK" : { "S": "tray" },
+                  "type" : { "S": "baking tray" },
+                  "label" : { "S": "baking tray" }, 
+                  "measure" : { "M" : {  "size" : { "S" : "small" }
+                  } },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  }
+                  }
+            }
+         },
+         {
+          "PutRequest": { 
+               "Item": { 
+                  "PKey" : { "S": "C-20-7" },
+                  "SortK" : { "S": "tarttin" },
+                  "type" : { "S": "AAtarttin" },
+                  "label" : { "S": "flutted tart tin" },
+                  "requ" : {"S": "with removable base"},
+                  "measure" : { "M" : {  "shape" : { "S" : "round" },
+                                          "dim" : { "S" : "23-25"},
+                                         "unit" : {"S": "cm" }
+                  } },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  }
+                  }
+            }
+         },
+         {
+          "PutRequest": { 
+               "Item": { 
+                  "PKey" : { "S": "C-20-7" },
+                  "SortK" : { "S": "fpbowl" },
+                  "type" : { "S": "bowl" },
+                  "label" : { "S": "food processor bowl" },
+                  "measure" : { "M" : {  "size" : { "S" : "medium" }} },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  }
+                  }
+            }
+         },
+         {
+          "PutRequest": { 
+               "Item": { 
+                  "PKey" : { "S": "C-20-7" },
+                  "SortK" : { "S": "htbowl" },
+                  "type" : { "S": "bowl" },
+                  "label" : { "S": "bowl" }, 
+                  "prelabel" : {"S": "heat proof"},
+                  "measure" : { "M" : {  "size" : { "S" : "medium" }} },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  }
+                  }
+            }
+         },
+         {
+          "PutRequest": { 
+               "Item": { 
+                  "PKey" : { "S": "C-20-7" },
+                  "SortK" : { "S": "smpan" },
+                  "type" : { "S": "sausepan" },
+                  "label" : { "S": "sausepan" }, 
+                  "measure" : { "M" : {  "size" : { "S" : "medium" }} },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  }
+                  }
+            }
+         },
+         {
+          "PutRequest": { 
+               "Item": { 
+                  "PKey" : { "S": "C-20-7" },
+                  "SortK" : { "S": "ebowl" },
+                  "type" : { "S": "electric mixer bowl" },
+                  "label" : { "S": "electric mixer bowl" }, 
+                  "measure" : { "M" : {  "size" : { "S" : "large" }} },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  }
+                  }
+            }
+         }
+      ],
+      "Recipe" : [ 
+        {
+        "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "R-20" },
+                "SortK" : { "N": "7"},
+                "RName" : { "S": "Chocolate tart with hazelnut, rosemary and orange"},
+                "Index" : { "SS" : ["pastry"]},
+                "Srv" : { "S" : "8-10" },
+                "Part" : { "L" : [
+                                { "M" : { 
+                                  "Idx" : { "S" : "C"},
+                                  "Title" : { "S" : "CRYSTALIZED ROSEMARY GARNISH|(optional)" }}
+                                },
+                                { "M" : { 
+                                  "Idx" : { "S" : "H"},
+                                  "Title" : { "S" : "HAZELNUT 'BRITTLE'" }}
+                                },
+                                { "M" : { 
+                                  "Idx" : { "S" : "S"},
+                                  "Title" : { "S" : "SWEET SHORTCRUST PASTRY|(You will only need half the quantity)" }}
+                                },
+                                { "M" : { 
+                                  "Idx" : { "S" : "F"},
+                                  "InvsI" : {"BOOL":true},
+                                  "Title" : { "S" : "FILLING|(Requires both non-optional parts to be completed first)" }}
+                                }
+                                ]
+                }
+        }
+        }
+        },
+        {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-20-7" },
+                "SortK" : { "N": "1"},
+                "part" : { "S" : "C" },
+                "ingrd" : { "S" : "egg" },
+                "iQual" : { "S" : "white, lightly whisked" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "1/2" } ,
+                                      "size" : { "S" : "large" }
+                                      }
+                },
+                "task" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "We are about to crystallize the rosemary sprigs for garnishing. Start by whisking the white of {measure} {ingrd}." },
+                                  "say" : { "S" :  "We are about to crystallize the rosemary sprigs for garnishing. Start by whisking the white of {measure} {ingrd}." },
+                                  "time" : { "N" : "2" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useD" : { "M" : { "type" : {"S": "whisk" }}},
+                                  "addToC" : { "SS" : [ "whitebowl" ] }
+                                    }
+                                }
+                                ]
+                }
+            }
+            }
+            } ,
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-20-7" },
+                "SortK" : { "N": "2"},
+                "part" : { "S" : "C" },
+                "ingrd" : { "S" : "rosemary" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "1-2" } ,
+                                      "unit" : { "S" : "sprig" },
+                                      "ns" : { "BOOL" : true }
+                                      }
+                },
+                "altMeasure" : { "M" : { 
+                                      "qty" : { "S" : "5" } ,
+                                      "unit" : { "S" : "g" }
+                                      }
+                },
+                "task" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "Lay {measure} of {ingrd} on a {useD} and lightly brush each side with the egg white." },
+                                  "say" : { "S" : "Lay {measure} of {ingrd} on a {useD} and lightly brush each side with the egg white." },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" }, 
+                                  "sourceC" : { "SS" : [ "whitebowl" ] },
+                                  "useD" : { "M" : { "type" : {"S": "pastry brush" }}}
+                                    }
+                                } 
+                                ]
+                }
+            }
+            }
+            } ,
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-20-7" },
+                "SortK" : { "N": "3"},
+                "part" : { "S" : "C" },
+                "ingrd" : { "S" : "caster sugar" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "20" } ,
+                                      "unit" : { "S" : "g" }
+                                      }
+                },
+                "task" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "sprinkle {measure} of {ingrd} evenly and lightly over both sides of the leaves, then set aside in a cool dry place on a {useD} for about {timeu}, until crisp" },
+                                  "say" : { "S" : "sprinkle {measure} of {ingrd} evenly and lightly over both sides of the leaves, then set aside in a cool dry place on a {useD} for about {timeu}, until crisp"},
+                                  "time" : { "N" : "8" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "hr" },
+                                  "useD" : { "M" : { "type" : {"S": "wire rack" }}}
+                                    }
+                                }
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-20-7" },
+                "SortK" : { "N":"5"},
+                "part" : { "S" : "H" },
+                "ingrd" : { "S" : "golden syrup" },
+                "altIngrd" : { "S" : "corn syrup" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "2" } ,
+                                      "unit" : { "S" : "tbsp" }
+                                      }
+                },
+               "task" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "To make the hazelnut brittle, first preheat {used} to {temp}"   },
+                                  "say" : { "S" : "To make the hazelnut brittle, first preheat {used} to {temp}"   },
+                                  "time" : { "N" : "10" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useD" : { "M" : {
+                                              "type" : { "S": "oven" },
+                                              "temp" : { "S" : "220/200" },
+                                               "unit" : { "S" : "C" },
+                                               "set"  : { "S" : "Gas Mark 7"}
+                                                 }
+                                            },
+                                "timer" : { "L" : [ { "M" :  { "set" : { "BOOL" : true }}} ] }
+                                }},
+                                 { "M" :  {
+                                  "txt" : { "S" : "place {measure} of {ingrd} or {altIngrd} into {addToC}"   },
+                                  "say" : { "S" :" place {measure} of {ingrd} or {altIngrd} into {addToC}"   },
+                                  "time" : { "N" : "20" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : [ "brittlepan"] }
+                                            }
+                                } 
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-20-7" },
+                "SortK" : { "N": "6"},
+                "part" : { "S" : "H" },
+                "ingrd" : { "S" : "maple syrup" }, 
+                "altIngrd" :  { "S" : "clear honey" }, 
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "2" } ,
+                                      "unit" : { "S" : "tbsp" } 
+                                      }
+                },
+                "task" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "Add {measure} of {ingrd} or {altIngrd} to the {addtoc.label}" },
+                                  "say" : { "S" : "Add {measure} of {ingrd} or {altIngrd} to the {addtoc.label}"},
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : [ "brittlepan"] }
+                                    }
+                                }
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-20-7" },
+                "SortK" : { "N": "7"},
+                "part" : { "S" : "H" },
+                "ingrd" : { "S" : "caster sugar" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "2" } ,
+                                      "size" : { "S" : "tbsp" }
+                                      }
+                },
+                "task" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "Add {measure} {ingrd}." },
+                                  "say" : { "S" : "Add {measure} {ingrd}." },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : [ "brittlepan"] }
+                                    }
+                                }
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-20-7" },
+                "SortK" : { "N": "8"},
+                "part" : { "S" : "H" },
+                "ingrd" : { "S" : "salt" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "1/8" } ,
+                                      "unit" : { "S" : "tsp" } 
+                                      }
+                },
+                "task" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "Add {measure} {ingrd}." },
+                                  "say" : { "S" : "Add {measure} {ingrd}."  },
+                                  "time" : { "N" : "20" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "sec" },
+                                  "addToC" : { "SS" : [ "brittlepan"] } }
+                                },
+                                { "M" :  {
+                                  "txt" : { "S" : "Place the pan of a low heat and stir until the sugar has disolved" },
+                                  "say" : { "S" : "Place the pan of a low heat and stir until the sugar has disolved" },
+                                  "time" : { "N" : "20" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "sec" },
+                                  "useC" : { "SS" : [ "brittlepan"] }
+                                }}
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-20-7" },
+                "SortK" : { "N": "9"},
+                "part" : { "S" : "H" },
+                "ingrd" : { "S" : "hazelnuts" },
+                "quali" : { "S" : "chopped roasted" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "100" } ,
+                                      "unit" : { "S" : "g" }
+                                      }
+                },
+                "prep" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "Chop {measure} of roasted {ingrd} and set aside " },
+                                  "say" : { "S" : "Chop {measure} of roasted {ingrd} and set aside " },
+                                  "time" : { "N" : "2" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : [ "SAB-S"] }
+                                    }
+                                }
+                                ]
+                },
+                "task" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "Add the {ingrd} and mix until the nuts are evenly coated" },
+                                  "say" : { "S" : "Add the {ingrd} and mix until the nuts are evenly coated" },
+                                  "time" : { "N" : "20" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "sec" },
+                                  "sourceC" : { "SS" : [ "SAB-S"] },
+                                  "addToC" : { "SS" : [ "brittlepan"] }
+                                    }
+                                },
+                                { "M" :  {
+                                  "txt" : { "S" : "transfer the mixture to a small parchment-lined {addToC} and spread the nuts out evenly with a spoon" },
+                                  "say" : { "S" :  "transfer the mixture to a small parchment-lined {addToC} and spread the nuts out evenly with a spoon" },
+                                  "time" : { "N" : "20" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "sec" },
+                                  "useD" : { "M" : { "type" : {"S": "spoon" }}},
+                                  "sourceC" : { "SS" : [ "brittlepan"] },
+                                  "addToC" : { "SS" : [ "tray"] }
+                                    }
+                                },
+                                { "M" :  {
+                                  "txt" : { "S" : "transfer the {usec.label} to the oven which should now be at {device.oven.temp}" },
+                                  "say" : { "S" : "transfer the {usec.label} to the oven which should now be at {device.oven.temp}" },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useC" : { "SS" : [ "tray"] },
+                                  "timer" : { "L" : [ { "M" :  { "set" : { "BOOL" : true }}} ] }
+                                  "useC" : { "SS" : [ "tray"] }
+                                    }
+                                },
+                                { "M" :  {
+                                  "txt" : { "S" :"check the mixture is golden brown and bubbling, if not leave for another minute" },
+                                  "say" : { "S" : "check the mixture is golden brown and bubbling, if not leave for another minute" },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "useC" : { "SS" : [ "tray"] }
+                                    }
+                                },
+                                { "M" :  {
+                                  "txt" : { "S" : "when the mixture looks right, remove from the oven and allow to cool completely" },
+                                  "say" : { "S" : "when the mixture looks right, remove from the oven and allow to cool completely" },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : [ "tray"] } }
+                                },
+                                { "M" :  {
+                                  "txt" : { "S" : "once cooled, roughly chop into {l:0.5|cm||} pieces and set aside until ready to use " },
+                                  "say" : { "S" : "once cooled, roughly chop into {l:0.5|cm||} pieces and set aside until ready to use " },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : [ "tray"] } }
+                                },
+                                { "M" :  {
+                                  "txt" : { "S" : " turn off the oven" },
+                                  "say" : { "S" : "turn off the oven"},
+                                  "time" : { "N" : "10" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "sec" }
+                                    }
+                                }
+                                ]
+                }
+            }
+            }
+            } ,
+        {
+        "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-20-7" },
+                "SortK" : { "N": "10"},
+                "part" : { "S" : "F" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "double cream" },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "120" } ,
+                                      "unit" : { "S" : "g" }
+                                      }
+                },
+                "task" : { "L" : [
+                                { "M" : { 
+                                  "txt" : { "S" : "To infuse the chocolate, place {measure} of {ingrd} into {addtoC} "},
+                                  "say" : { "S" : "To infuse the chocolate, place {measure} of {ingrd} into {addtoC} "},
+                                  "time" : { "N" : "1" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : ["chocpan"] }}}
+                                ] }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-20-7" },
+                "SortK" : { "N": "20"},
+                "label" : { "S": "butter"},
+                "part" : { "S" : "F" },
+                "ingrd" : { "S" : "unsalted butter" },
+                "iqual" : { "S" : "cubed" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "90" } ,
+                                      "unit" : { "S" : "g" }
+                                      }
+                },
+                "task" : { "L" : [
+                                { "M" : {
+                                 "txt" : { "S" : "Add {measure} of {iqual} {ingrd} to the {addtoC.label}"},
+                                  "say" : { "S" : "Add {measure} of {iqual} {ingrd} to the {addtoC.label}"},
+                                  "time" : { "N" : "30" },
+                                  "unit" : { "S" : "sec" },
+                                  "addToC" : { "SS" : [ "chocpan"] }
+                                  }
+                                }
+                                ]}
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-20-7" },
+                "SortK" : { "N": "30"},
+                "part" : { "S" : "F" },
+                "ingrd" : { "S" : "rosemary" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "3" } ,
+                                      "unit" : { "S" : "sprig" }
+                                      }
+                },
+                "altMeasure" : { "M" : { 
+                                      "qty" : { "S" : "10" } ,
+                                      "unit" : { "S" : "g" }
+                                      }
+                },
+                "task" : { "L" : [
+                                { "M" : {
+                                  "txt" : { "S" : "Add {altmeasure} of {ingrd} which should equate to about {measure}" },
+                                  "say" : { "S" : "Add {altmeasure} of {ingrd} which should equate to about {measure}"},
+                                  "time" : { "N" : "30" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "sec" },
+                                  "addToC" : { "SS" : [ "chocpan"] }
+                                    }
+                                }
+                                ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-20-7" },
+                "SortK" : { "N": "40"},
+                "part" : { "S" : "F" },
+                "ingrd" : { "S" : "orange" },
+                "qualm" : { "S" : "shaved peel of" },
+                "iQual" : { "S" : "(avoiding the bitter white pith) " },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "1" } 
+                                      }
+                },
+               "task" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "and finally add the {qualm} of {measure} {ingrd} " },
+                                  "say" : { "S" : "and finally add the {qualm} of {measure} {ingrd} "},
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : [ "chocpan"] }
+                                  }
+                                },
+                                { "M" : {
+                                  "txt" : { "S" : "Place the {addtoc.label} over a low heat. " },
+                                  "say" : { "S" : "Place the {addtoc.label} over a low heat. " },
+                                  "time" : { "N" : "30" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "sec" },
+                                  "addToC" : { "SS" : [ "chocpan"] }
+                                    }
+                                } ,
+                                { "M" : {
+                                  "txt" : { "S" : "When the mixture is just coming to a simmer and the butter has melted turn off the heat and set aside to infuse for an {timeu} to {tplus} or overnight in the fridge" },
+                                  "say" : { "S" : "When the mixture is just coming to a simmer and the butter has melted turn off the heat and set aside to infuse for an {timeu} to {tplus} or overnight in the fridge" },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "1" },
+                                  "unit" : { "S" : "hr" },
+                                  "addToC" : { "SS" : [ "chocpan"] },
+                                  "timer" : { "L" : [ { "M" :  { "set" : { "BOOL" : true },
+                                                                 "ask" : { "BOOL" : true }
+                                                                }
+                                                        } ] }
+                                            }
+                                }
+                                ]
+                }
+            }
+            }
+            }
+            ]
+
+} 
+  

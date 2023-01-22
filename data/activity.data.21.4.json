@@ -1,0 +1,168 @@
+{
+       "Ingredient" : [ 
+        {
+          "PutRequest": { 
+               "Item": { 
+                  "PKey" : { "S": "C-21-4" },
+                  "SortK" : { "S": "Sausepan" },
+                  "type" : { "S": "Sausepan" },
+                  "label" : { "S": "Sausepan" },
+                  "measure" : { "M" : { "size" : { "S" : "large" } } },
+                  "coord" : { "L" : [ {"N": "13" }, {"N": "45" } ]  },
+                  "contents" : { "S": "water" },
+                  "purpose": { "S": "cooking" }
+                  }
+            }
+         }
+      ],
+      "Recipe" : [ 
+        {
+        "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "R-21" },
+                "SortK" : { "N": "4"},
+                "RName" : { "S": "Green Beans with Parmesan"},
+                "Index" : { "SS" : ["vegetarian"] },
+                "Srv" : { "S": "4"}
+            }
+        }
+        },
+        {
+          "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-4" },
+                "SortK" : { "N": "10"},
+                "label" : { "S": "beans"},
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "green beans"},
+                "iQual" : { "S" : ", trimmed"},
+                "quali" : { "S" : "fine"},
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "450" } ,
+                                      "unit" : { "S" : "g" }
+                                      }
+                },
+                 "prep" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "bring a large sausepan of water to a boil" },
+                                  "say" : { "S" : "bring a large sausepan of water to a boil" },
+                                  "time" : { "N" : "6" },
+                                  "unit" : { "S" : "min" }, 
+                                  "useC" : { "SS" : ["Sausepan"] },
+                                  "parallel" : {"BOOL" : true }
+                                        }   
+                                },
+                                { "M" :  {
+                                  "txt" : { "S" : "trim {measure} of {ingrd} and set aside" },
+                                  "say" : { "S" : "trim {measure} of {ingrd} and set aside" },
+                                  "time" : { "N" : "3" },
+                                  "unit" : { "S" : "min" }, 
+                                  "useC" : { "SS" : ["SAB-M"] }
+                                        }   
+                                }
+                                ]
+                 },
+                "task" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "when the water is boiling, drop the {ingrd} into the water and cover the pot. When the water comes back to the boil, remove the lid and cook until the {ingrd} are al dente" },
+                                  "say" : { "S" : "when the water is boiling, drop the {ingrd} into the water and cover the pot. When the water comes back to the boil, remove the lid and cook until the {ingrd} are al dente" },
+                                  "time" : { "N" : "5" },
+                                  "tplus" : { "N" : "1" },
+                                  "unit" : { "S" : "min" },
+                                  "sourceC" : { "SS" : [ "SAB-M" ] },
+                                  "addToC" : { "SS" : [ "Sausepan" ] }
+                                        }   
+                                }
+                                ]
+                            }
+            }
+          }
+        },
+        {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-4" },
+                "SortK" : { "N": "20"},
+                "label" : { "S": "oil"},
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "olive oil" },
+                "quali" : { "S" : "extra virgin" },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "150" },
+                                      "unit" :  { "S" : "ml" }
+                            }
+                 },
+                "task" : { "L" : [ 
+                                { "M" : { 
+                                  "txt" : { "S" : "Drain the breans and return to the warm sausepan (off the heat) with a {measure}  of {quali} {ingrd}." },
+                                  "say" : { "S" : "Drain the breans and return to the warm sausepan (off the heat) with a {measure}  of {quali} {ingrd}." },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : [ "Sausepan" ] }
+                                    }
+                                }
+                                ]
+                }
+            }
+            }                   
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-4" },
+                "SortK" : { "N": "40"},
+                "label" : { "S": "Seasoning"},
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "ingrd" : { "S" : "lemon" },
+                "qualm" : { "S" : "juice" },
+                "measure" : { "M" : { 
+                                      "num" : { "S" : "1" } 
+                                      }
+                },
+                "task" : { "L" : [ 
+                            { "M" : { 
+                                  "txt" : { "S" : "Season with the {qualm} of {measure} {ingrd} and some black pepper" },
+                                  "say" : { "S" : "Season with the {qualm} of {measure} {ingrd} and some black pepper" },
+                                  "time" : { "N" : "2" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : [ "Sausepan" ] }
+                            }
+                            }
+                            ]
+                }
+            }
+            }
+            },
+            {
+            "PutRequest": { 
+            "Item": { 
+                "PKey" : { "S": "A-21-4" },
+                "SortK" : { "N": "50"},
+                "label" : { "S": "cheese"},
+                "ingrd" : { "S" : "Parmesan" },
+                "iQual" : { "S" : "freshly grated" },
+                "coord" : { "L" : [ {"N": "13" }, {"N": "23" } ]  },
+                "measure" : { "M" : { 
+                                      "qty" : { "S" : "100" } ,
+                                      "unit" : { "S" : "g" }
+                                      }
+                },
+                "task" : { "L" : [ 
+                                { "M" :  {
+                                  "txt" : { "S" : "Grate the {ingrd} and stir in and keep stirring until the {ingrd} begins to go stringy and coats the beans. Server immediately" },
+                                  "say" : { "S" : "Grate the {ingrd} and stir in and keep stirring until the {ingrd} begins to go stringy and coats the beans. Server immediately" },
+                                  "time" : { "N" : "1" },
+                                  "tplus" : { "N" : "0" },
+                                  "unit" : { "S" : "min" },
+                                  "addToC" : { "SS" : [ "Sausepan" ] }
+                                  }
+                                }
+                                ]
+                }
+            }
+            }
+            }
+    ]
+}    
